@@ -1,13 +1,23 @@
 'use client'
+
+// React & Next Import
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
+
+// Api Import
 import PriorityApi from 'src/api/priority/PriorityApi';
 import ToDoApi from 'src/api/todo/ToDoApi';
 import UserApi from 'src/api/user/UserApi';
+
+// Error Import
 import { validateCreateTodo } from 'src/errors/create-todo.errors';
+
+// Type Import
 import { PriorityModel } from 'src/types/priority.type';
 import { ToDoCreate } from 'src/types/todo.type';
 import { UserModel } from 'src/types/user.type';
+
+// Util Import
 import { Alerts } from 'src/utils/Alerts';
 import { useSession } from 'src/utils/SessionProvider';
 
@@ -17,6 +27,7 @@ interface Dropdown {
 }
 
 const NewTodo = () => {
+  // ** States
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [priority, setPriority] = useState('');

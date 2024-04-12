@@ -1,3 +1,4 @@
+// Dependency Import
 import Swal from 'sweetalert2'
 
 export class Alerts {

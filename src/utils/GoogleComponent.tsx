@@ -16,10 +16,10 @@ import { Alerts } from './Alerts';
 import { useSession } from './SessionProvider';
 
 const GoogleComponent = () => {
-    //
+    // ** State
     const [anchorEl, setAnchorEl] = useState<Element | null>(null)
 
-    // Hooks
+    // ** Hooks
     const api = new UserApi();
     const alert = new Alerts();
     const router = useRouter();

@@ -1,4 +1,7 @@
+// Dependency Import
 import axios from "axios"
+
+// Type Import
 import { ToDoCreate, ToDoUpdate } from "src/types/todo.type"
 
 export default class ToDoApi {

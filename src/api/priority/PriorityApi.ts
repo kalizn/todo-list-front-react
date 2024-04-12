@@ -1,5 +1,5 @@
+// Dependency Import
 import axios from "axios"
-import { UserToCreate, UserToUpdate } from "src/types/user.type"
 
 export default class PriorityApi {
     [x: string] : any

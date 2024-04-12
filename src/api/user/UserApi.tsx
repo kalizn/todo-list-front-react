@@ -1,4 +1,7 @@
+// Dependency Import
 import axios from "axios"
+
+// Type Import
 import { UserToCreate, UserToUpdate } from "src/types/user.type"
 
 export default class UserApi {

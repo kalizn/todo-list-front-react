@@ -1,6 +1,9 @@
 'use client'
-import { CircularProgress } from '@mui/material'
+// React Import
 import React from 'react'
+
+// Dependency Import
+import { CircularProgress } from '@mui/material'
 
 const LoadingSpinner = () => {
   return (
